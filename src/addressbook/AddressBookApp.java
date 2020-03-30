@@ -5,11 +5,15 @@
  */
 package addressbook;
 
+import binarysearch.Tree;
+
 /**
  *
- * @author lleoc
+ * @AUTHOR: ONYENZE CLINTON
  */
 public class AddressBookApp extends javax.swing.JFrame {
+    
+    Tree tree = new Tree();
 
     /**
      * Creates new form AddressBookApp
@@ -58,12 +62,27 @@ public class AddressBookApp extends javax.swing.JFrame {
 
         AddJButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         AddJButton.setText("Add");
+        AddJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddJButtonActionPerformed(evt);
+            }
+        });
 
         ClearJButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         ClearJButton.setText("Clear");
+        ClearJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ClearJButtonActionPerformed(evt);
+            }
+        });
 
         RemoveJButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         RemoveJButton.setText("Remove");
+        RemoveJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RemoveJButtonActionPerformed(evt);
+            }
+        });
 
         SearchJButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         SearchJButton.setText("Search");
@@ -139,11 +158,23 @@ public class AddressBookApp extends javax.swing.JFrame {
                     .addComponent(RemoveJButton)
                     .addComponent(ExitJButton)
                     .addComponent(SearchJButton))
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void AddJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddJButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AddJButtonActionPerformed
+
+    private void ClearJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClearJButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ClearJButtonActionPerformed
+
+    private void RemoveJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RemoveJButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RemoveJButtonActionPerformed
 
     /**
      * @param args the command line arguments
